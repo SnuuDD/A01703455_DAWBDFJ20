@@ -1,0 +1,83 @@
+<div>
+    <ul id="put" class="collapsible">
+        <li>
+          <div class="collapsible-header teal accent-2"><i class="material-icons">ac_unit</i>¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atenciónn</div>
+          <div class="collapsible-body white"><span>Para mi es interesante como PHP te muestr la informacion de la version de SQL, tambien es interesante que por defecto PHP trae soporte para calendarios, como ultimo dato interesante es que las diferencias entre versiones de PHP, hacen un cambio muy significativo</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header teal accent-1"><i class="material-icons">apps</i>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</div>
+            <div class="collapsible-body white"><span>Ademas de añadir los servicios necesarios de PHP, LINUX, SQL y Apache, debemos configurar correctamente <code>php.ini</code></span></div>
+          </li>
+          <li>
+            <div class="collapsible-header teal accent-3"><i class="material-icons">announcement</i>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</div>
+            <div class="collapsible-body white"><span>Al final HTML solo son esqueletos que son adjuntados o unidos por el propio PHP, al mandar a llamar funciones, estas ya se encuentran dellado del servidor, por lo tanto el codigo se ejecuta alli, y el resultado sedespliega en el HTML</span></div>
+          </li>
+      </ul>
+    </div>
+
+    
+<br>
+
+
+<!--Promedio|-->
+
+<h6>El siguiente boton ejecuta y despliega el <strong>promedio</strong> de un arreglo de numeros aleatorios [1-100]</h6>
+    <input type="submit" class="white-text waves-light btn" name="" value="Ejecutar" id="boton1" onclick = "average();">
+<div class="row">  
+    <div class="card-panel center-align col s6 l3"> <p id="avg">Veras el resultado aqui 🤣</p> </div>
+</div>
+<br>
+
+<!--|Mediana|-->
+<h6>El siguiente boton ejecuta y despliega la <strong>mediana</strong> de un arreglo de numeros aleatorios [1-100]</h6>
+    <input type="submit" class="white-text waves-light btn" name="" value="Ejecutar" id="boton1" onclick = "mid();">
+<div class="row">  
+    <div class="card-panel center-align col s6 l3"> <p id="mid">Veras el resultado aqui 🐘</p> </div>
+</div>
+<br>
+
+<!-- ############################## Parte 2 ################################### -->
+
+<h6>El siguiente boton ejecuta y despliega la <strong>mediana, el promedio y numeros ordenados</strong> de un arreglo de numeros aleatorios diferente al anterior [1-1000]</h6>
+    <input type="submit" class="white-text waves-light btn" name="" value="Ejecutar" id="boton1" onclick = "mid2();average2();sorA();sorD();">
+<div class="row">  
+    <div class="card-panel center-align col s6 l3"> <p id="avg2">Veras el resultado aqui 😳</p> </div>
+    <div class="card-panel center-align col s6 l3"> <p id="mid2">Veras el resultado aqui 🤦‍♂️</p> </div>
+    <div class="card-panel center-align col s6 l3"> <p id="sorA">Veras el resultado aqui 😎</p> </div>
+    <div class="card-panel center-align col s6 l3"> <p id="sorD">Veras el resultado aqui 👋🏽</p> </div>
+</div>
+
+<!-- ############################## Tabla XD ###################################  ayuda :(-->
+
+<h6>El siguiente boton ejecuta y despliega la <strong>tabla</strong> de cuadrados y cubos de 1 hasta el numero 8</h6>
+<div class="row center-align">  
+    <div class="card-panel center-align col s12 l6"> <p id="VE"><?php echo $nomesalioXD ?></p> </div>
+</div>
+
+<script>
+    //Parte 1
+    function average(){
+      document.getElementById("avg").innerHTML='<?php echo average($arreglo); ?>';
+      //alert('<?php echo average($arreglo); ?>');
+    }
+    function mid(){
+      document.getElementById("mid").innerHTML='<?php echo mid($arreglo); ?>';
+    }
+    // Parte 2 del Script
+    function average2(){
+      document.getElementById("avg2").innerHTML='<?php echo average($arreglo2); ?>';
+      //alert('<?php echo average($arreglo); ?>');
+    }
+    function mid2(){
+      document.getElementById("mid2").innerHTML='<?php echo mid($arreglo2); ?>';
+    }
+
+    function sorA(){
+      document.getElementById("sorA").innerHTML='<?php echo showArg($arreglo2,1); ?>';
+    }
+    function sorD(){
+      document.getElementById("sorD").innerHTML='<?php echo showArg(array_reverse($arreglo2),0); ?>';
+    }
+
+
+  </script>

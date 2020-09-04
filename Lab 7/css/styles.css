@@ -1,0 +1,53 @@
+@import 'https://fonts.googleapis.com/css?family=Mina';
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
+
+body{
+	background-image: url("../images/wood.jpg");
+	background-size: cover;
+}
+
+
+  a {
+	color: #e81c4f;
+  }
+
+
+
+code{
+  color: blueviolet;
+  background-color: #f1f1f1;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
+  font-family: Consolas,"courier new";
+  font-size: 16px;
+}
+
+div#e2
+{
+    float: left;
+	width: 34%;
+	
+}
+div#e3,#e1
+{
+    float: left;
+	width: 33%;
+	
+}
+
+nav#godplshelp
+{
+        width:70%;
+        line-height: 0px;
+		display: inline-block;
+		align: center;
+}
+
+
+img
+{
+	border-radius: 40%;
+	height: 5em;
+	width: auto;
+}

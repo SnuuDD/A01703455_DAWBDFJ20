@@ -1,0 +1,103 @@
+h1, h2
+{
+	font-family: 'Mina', sans-serif;
+	text-align:center;
+	color: rgb(255, 255, 255);
+	font-size:52px;
+	font-style: bold;
+}
+body {
+   background-image:url('images/ayudapls.gif');
+  }
+p
+{
+	color: #FFF;
+	font-family: 'Mina', sans-serif;
+	font-size: 15px;
+	text-align:center;
+}
+header
+ {
+	font-family: 'Mina', sans-serif;
+	text-align:center;
+}
+
+.tabla
+{
+	margin: auto;
+	text-align: center;
+	border-collapse:collapse;
+	border-color:#aabcfe;
+}
+
+td
+ {
+	font-family:'Mina', sans-serif;
+	font-size:14px;
+	padding:2px 2px;
+	margin: 1px;
+	border-style:solid;
+	border-width:0px;
+	border-color:#000;
+	background-color:#040407;
+}
+th
+{
+	font-weight:bold;
+	font-family:'Mina', sans-serif;
+	font-size:25px;
+	font-weight:normal;padding:10px;
+	border-style:solid;
+	border-width:0px;
+	border-color:#000;
+	color:#fff;
+	background-image:url('images/hm.gif');
+	border-top-width:1px;
+	border-bottom-width:1px;
+}
+
+
+
+tfoot 
+{
+    font-weight: bold;
+    font-size: 14px;
+	color:#039;
+	background-image:url('images/texture.jpg');
+}
+
+img
+{
+	border-radius: 40%;
+
+}
+
+div
+{
+	text-align: center;
+}
+
+button
+{
+	border-radius: 5px;
+	background: #1f1f1f;
+	font-family: 'Mina',sans-serif;
+	color: white;
+	margin: auto;
+	display: block;
+}
+
+.JAJAJ{
+ 	width:60%;
+  	margin: auto;
+	border: 3px dotted gray;
+	background:#000;
+}
+
+.Preguntas{
+	width:80%;
+	margin: auto;
+	color:rgb(255, 255, 255);
+	font-style: bold;
+	background-image:url('images/xd.gif');
+}

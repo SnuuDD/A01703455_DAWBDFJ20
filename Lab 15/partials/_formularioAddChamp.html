@@ -1,0 +1,53 @@
+<br>
+<h4 class="center" >Registra un nuevo Champion.</h4>
+<div class="divider"></div>
+<br><br>
+    <form class="col s12" method="POST" action="controladorAddChamp.php">
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">face</i>
+                <input placeholder="Nombre" id="name" name="name" type="text" class="validate">
+                <label for="name">Nombre del Campeon</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <select name="opcion" class="icons">
+                  <option value="" disabled selected>Selecciona la Region</option>
+                  <option value="Aguasturbias" data-icon="images/aguasturbias.png">Aguasturbias</option>
+                  <option value="Bandle" data-icon="images/bandle.png">Bandle</option>
+                  <option value="Demacia" data-icon="images/demacia.png">Demacia</option>
+                  <option value="Freljord" data-icon="images/freljord.png">Freljord</option>
+                  <option value="Sombras" data-icon="images/shadows.png">Islas de las Sombras</option>
+                  <option value="Ixtal" data-icon="images/ixtal.png">Ixtal</option>
+                  <option value="Jonia" data-icon="images/jonia.png">Jonia</option>
+                  <option value="Noxus" data-icon="images/noxus.png">Noxus</option>
+                  <option value="Piltover" data-icon="images/piltover.png">Piltover</option>
+                  <option value="Shurima" data-icon="images/shurima.png">Shurima</option>
+                  <option value="Targon" data-icon="images/targon.png">Targon</option>
+                  <option value="Zaun" data-icon="images/zaun.png">Zaun</option>
+                  
+                </select>
+                <label>Regiones</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">casino</i>
+                <input placeholder="Rol" id="rol" name="rol" type="text" class="validate">
+                <label for="rol">Rol</label>
+            </div>
+            <div class="input-field col s6 ">
+                <i class="material-icons prefix">fitness_center</i>
+                <input placeholder="Clase" id="clase" name="clase" type="text" class="validate">
+                <label for="clase">Clase</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 l12 center">
+                <button class="btn waves-effect deep-purple accent-2" type="submit" name="action">Añadir
+                  <i class="material-icons right">add</i>
+                </button>
+            </div>
+        </div>    
+    </form>
+
+  

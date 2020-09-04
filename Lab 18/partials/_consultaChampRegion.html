@@ -1,0 +1,38 @@
+<div class="row">
+    <form class="col s12" action="controladorChampRegion.php" method="POST">
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <select name="opcion" class="icons">
+            <option value="" disabled selected>Selecciona la Region</option>
+            <option value="Aguasturbias" data-icon="images/aguasturbias.png">Aguasturbias</option>
+            <option value="Bandle" data-icon="images/bandle.png">Bandle</option>
+            <option value="Demacia" data-icon="images/demacia.png">Demacia</option>
+            <option value="Freljord" data-icon="images/freljord.png">Freljord</option>
+            <option value="Sombras" data-icon="images/shadows.png">Islas de las Sombras</option>
+            <option value="Ixtal" data-icon="images/ixtal.png">Ixtal</option>
+            <option value="Jonia" data-icon="images/jonia.png">Jonia</option>
+            <option value="Noxus" data-icon="images/noxus.png">Noxus</option>
+            <option value="Piltover" data-icon="images/piltover.png">Piltover</option>
+            <option value="Shurima" data-icon="images/shurima.png">Shurima</option>
+            <option value="Targon" data-icon="images/targon.png">Targon</option>
+            <option value="Zaun" data-icon="images/zaun.png">Zaun</option>
+            
+          </select>
+          <label>Regiones</label>
+      </div>
+        <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input class="btn  indigo darken-2" type="submit" value="Consultar">
+              </div>
+            </div>
+          </div>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, options);
+        });
+
+    </script>
+</div>

@@ -1,0 +1,51 @@
+<br>
+<h4 class="center" >Registra un nuevo Incidente.</h4>
+<div class="divider"></div>
+<br><br>
+    <form class="col s12" method="POST" action="controladorAddIncidente.php">
+        <div class="row">
+           
+            <div class="input-field col s6 offset-s3">
+                <select name="lugarid" class="icons">
+                  <option value="" disabled selected">¿Donde se presento el incidente?</option>
+                  <option value="1">Centro Turistico</option>
+                  <option value="2">Laboratorios</option>
+                  <option value="3">Restaurante</option>
+                  <option value="4">Centro Operativo</option>
+                  <option value="5">Triceraptors</option>
+                  <option value="6">Dilofosaurios</option>
+                  <option value="7">Velociraptors</option>
+                  <option value="8">TRex</option>
+                  <option value="9">Planicie de los herbivoros</option>
+                  
+                </select>
+                <label>Lugar del Incidente</label>
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="input-field col s6 offset-s3">
+                <select name="tipoid" class="icons">
+                  <option value="" disabled selected">¿Donde se presento el incidente?</option>
+                  <option value="1">Falla eléctrica</option>
+                  <option value="2">Fuga de herbívoros</option>
+                  <option value="3">Fuga de Velociraptors</option>
+                  <option value="4">Fuga de TRex</option>
+                  <option value="5">Robo de ADN</option>
+                  <option value="6">Auto descompuesto</option>
+                  <option value="7">Visitantes en zona no autorizada</option>
+                  
+                </select>
+                <label>Tipo de Incidente</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 l12 center">
+                <button class="btn waves-effect indigo accent-2" type="submit" name="action">Añadir
+                  <i class="material-icons right">add</i>
+                </button>
+            </div>
+        </div>    
+    </form>
+
+  

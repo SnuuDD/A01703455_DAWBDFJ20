@@ -1,0 +1,113 @@
+h1, h2
+{
+	font-family: 'Mina', sans-serif;
+	text-align:center;
+	color: #FFF;
+}
+body {
+   background-image:url('images/xd.gif');
+  }
+p
+{
+	color: rgb(43, 33, 102);
+	font-family: 'Mina', sans-serif;
+	text-align:center;
+}
+header
+ {
+	font-family: 'Mina', sans-serif;
+	text-align:center;
+}
+
+.tabla
+{
+	margin: auto;
+	text-align: center;
+	border-collapse:collapse;
+	border-color:#aabcfe;
+}
+
+#definitions
+{
+	text-align: center;
+	border-collapse:collapse;
+	border-color:#fff;
+}
+
+td
+ {
+	font-family:'Mina', sans-serif;
+	font-size:14px;
+	padding:10px 10px;
+	margin: 1px;
+	border-style:solid;
+	border-width:0px;
+	border-color:#aabcfe;
+	color:#669;
+	background-color:#e8edff;
+}
+th
+{
+	font-weight:bold;
+	font-family:'Mina', sans-serif;
+	font-size:14px;
+	font-weight:normal;padding:10px;
+	border-style:solid;
+	border-width:0px;
+	border-color:#aabcfe;
+	color:#039;
+	background-image:url('images/texture.jpg');
+	border-top-width:1px;
+	border-bottom-width:1px;
+}
+caption 
+{
+ background: #8888FF;
+ margin: 0;
+ border: 0px;
+ border-bottom: none;
+ padding: 4px ;
+ font-family:'Mina';
+ font-weight:bold;
+}
+
+
+tfoot 
+{
+    font-weight: bold;
+    font-size: 14px;
+	color:#039;
+	background-image:url('images/texture.jpg');
+}
+
+img
+{
+	border-radius: 40%;
+
+}
+
+div
+{
+	text-align: center;
+}
+
+.collapsible {
+	background-color:rgb(54, 96, 145);;
+	color: rgb(143, 231, 220);
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 18px;
+	font-family:'Mina';
+ 	font-weight:bold;
+  }
+ 
+  
+  .content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color:rgb(159, 205, 221);
+  }

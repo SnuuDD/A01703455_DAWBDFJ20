@@ -1,0 +1,32 @@
+<div>
+    <ul id="put" class="collapsible">
+        <li>
+          <div class="collapsible-header teal accent-1"><i class="material-icons">ac_unit</i>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</div>
+          <div class="collapsible-body white"><span>Es bastante importante que una Sesion se libere, con un <code>session_unset</code> liberamos el arreglo <code>$_SESSION</code> y con <code>session_destroy</code> la destruimos, de esta manera, desaparece la informacion de la sesion de la computadora y no se expone a intercepciones de alguien extrerno</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header teal accent-2"><i class="material-icons">apps</i>¿Cuál es la diferencia entre una variable de sesión y una cookie?</div>
+            <div class="collapsible-body white">
+                <span>El concepto es almacenar datos persistentes en las cargas de página para un visitante web. Las cookies lo almacenan directamente en el cliente. Las sesiones usan una cookie como un tipo de clave para asociarse con los datos almacenados en el servidor. <br> Se prefiere usar sesiones porque los valores reales están ocultos del cliente y se controla cuando los datos caducan y se vuelven inválidos. Si todo se basaba en cookies, un usuario (o un hacker) podría manipular sus datos de cookies y luego reproducir solicitudes en su sitio.
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header teal accent-3"><i class="material-icons">announcement</i>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</div>
+            <div class="collapsible-body white"><span>
+                
+            <ul class="collection">
+                <li class="collection-item">Exixten muchas tecnicas para lidiar con esto, una de ellas es verificar si el archivo existe, y sumar un valor a su respectivo id, otra opcion es utilizar el SHA1 de un archivo y remplazarlo por el nombre</li>
+            </ul></span>
+        </div>
+        </li>
+        <li>
+            <div class="collapsible-header teal accent-4"><i class="material-icons">ac_unit</i>¿Qué es XSS y cómo se puede prevenir?</div>
+            <div class="collapsible-body white"><span>CSRF: el Cross Site Request Forgery (CSRF o XSRF) es un tipo de ataque que se suele usar para estafas por Internet. Los delincuentes se apoderan de una sesión autorizada por el usuario (session riding) para realizar actos dañinos. El proceso se lleva a cabo mediante solicitudes HTTP.
+                <br>
+                La página web puede crear un token único (similar a una secuencia aleatoria de caracteres) y convertirlo en parte de la solicitud HTTP. Así, si el servidor recibe una solicitud sin token o con un toquen que (ya) no es válido, dicha solicitud se rechaza de forma automática.
+            </span></div>
+          </li>
+
+      </ul>
+  </div>

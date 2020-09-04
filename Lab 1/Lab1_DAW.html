@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet"  href="styles.css" type="text/css" media=screen>
+  <script src="Funcion.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet"> 
+	<title>Laboratorio 1. DAW-DB</title>
+</head>
+<body>
+<header>
+    <h1>Laboratorio 1. Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</h1>
+</header>
+
+  
+ 
+  <br><br>
+
+  <div>
+            <table class="tabla">
+              <thead>
+                <tr>
+                  <th><strong>Foto</strong>
+                  <th><strong>Sobre mi</strong>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                        <img height="150" src='images/profileimage.jpg' alt="Foto de Perfil"/>
+                  </td>
+                  <td>
+                      
+                            <p><strong>Nombre:</strong> Luis Jesus Morales Juarez
+                                <p><strong>Matricula:</strong> A01703455
+                                <p><strong> Cumpleaños:</strong> 12 de Julio
+                                <p><strong>Carrera:</strong> ISC
+                                <p><strong>E-mail:</strong> A01703455@itesm.mx
+                            <br><br>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+  </div>
+
+  <br><br>
+
+<button class="collapsible" name="collapsible" value="collapsible"  onclick="Collapsible('collapsible')">Ver Definiciones</button>
+  <div class="content">
+    <div style="background-color:lightblue" >
+      <h3>URL</h3>
+       Las URLs se utilizan para localizar recursos, porporcionando una identificacion
+           a la direccion del recurso.  Una vez encontrando dicho recursos,
+            el sistema realiza una serie de operaciones en dicho recurso, normalmente
+            identificadas con las palabras <strong>'access', 'update',
+            'replace', 'find attributes'</strong>. En general, solo el metodo <strong>'access'</strong>
+            debe especificarse para cualquier esquema de URL. [1]
+  </div>
+
+  <div style="background-color:lightblue" >
+        <h3>MIME</h3>
+         Multipurpose Internet Mail Extensions (MIME) es un estándar de Internet para describir los tipos de contenido en los mensajes.
+        Los mensajes MIME pueden contener texto, imágenes, audio, video y otros datos específicos de aplicación.
+        La información oficial de MIME es proporcionada por Internet Engineering Task Force (IETF). [2]
+ </div>
+
+ <div style="background-color:lightblue" >
+        <h3>HTTP</h3>
+        Hypertext Transfer Protocol (HTTP) es un protocolo de nivel de aplicación para sistemas 
+        de información distribuidos, colaborativos y de hipermedia. 
+        Es un protocolo genérico, sin estado y orientado a objetos que se puede utilizar 
+        para muchas tareas, como nombres de servidores y sistemas de gestión de objetos 
+        distribuidos, a través de la extensión de sus métodos de solicitud. [3]
+ </div>
+
+
+<div style="background-color:lightblue" >
+        <h3>HTML5</h3>
+        HTML5 (HyperText Markup Language, versión 5) es la quinta revisión del ya existente HTML
+        el cual establece una serie de nuevos elementos y atributos que reflejan el uso típico 
+        de los sitios web modernos. [4]
+ </div>
+ 
+<div style="background-color:lightblue" >
+        <h3>JS</h3>
+        JavaScript (JS) es un lenguaje ligero e interpretado, orientado a objetos con 
+        funciones de primera clase, es un lenguaje script multi-paradigma, basado en prototipos, dinámico,
+         soporta estilos de programación funcional, orientada a objetos e imperativa. [4]
+ </div>
+
+<div style="background-color:lightblue" >
+        <h3>PHP</h3>
+        PHP es un lenguaje interpretado del lado del servidor que se caracteriza por su potencia
+        robustez y modularidad, los programas estan embebidos directamente en el codigo HTML y se ejecutan 
+        desde el servidor web. [5]
+ </div>
+
+<div style="background-color:lightblue" >
+        <h3>JSP</h3>
+        Java Server Pages (JSP) es una extensión de la plataforma Java que promete convertirse en
+        la herramienta estándar para el desarrollo de aplicaciones web. Java Server Pages permite a
+        los desarrolladores crear fácilmente páginas web dinámicas e interactivas incorporando scripts 
+        directamente en HTML y XML. [6]
+ </div>
+
+ <div style="background-color:lightblue" >
+        <h3>AJAX</h3>
+        JavaScript Asíncrono + XML (AJAX) no es una tecnología por sí misma, es un término que describe
+        un nuevo modo de utilizar conjuntamente varias tecnologías existentes. Esto incluye: HTML o XHTML,
+        CSS, JavaScript, DOM, XML, XSLT, y XMLHttpRequest. Gracias a esta tecnologia
+        es posible lograr aplicaciones web capaces de actualizarse continuamente sin tener que volver a cargar la página completa. [7]
+ </div> 
+ <br>
+</div>
+<br><br>
+
+
+<button class="collapsible" name="collapsible" value="collapsible"  onclick="Collapsible('collapsible')">Ver Preguntas</button>
+  <div class="content">
+
+      <div style="background-color:rgb(213, 120, 221)" >
+          <h3>¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+          Internet se le conoce como un conjunto descentralizado de redes de comunicacion regidos por los protocolos
+          TCP/IP. En cambio WWW por sus siglas en ingles (World Wide Web) es un sistema de distribucion de documentos
+          de hipertexto e hipermedia que se rige por diferentes estandares, entre ellos: <strong>URL, HTTP, HTML, XML</strong>
+          entre otros.
+      </div> 
+
+      <div style="background-color:rgb(213, 120, 221)" >
+          <h3>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h3>
+          Para realizar solicitudes a un servidor por medio del protocolo HTTP, se utilizan metodos predefinidos
+          del mismo protocolo que indican que acciones se deber realizar sobre los recursos.
+          <ul>
+              <li><strong>GET: </strong>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos</li>
+              <li><strong>HEAD: </strong>El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.</li>
+              <li><strong>POST: </strong>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.</li>
+              <li><strong>PUT: </strong>El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.</li>
+              <li><strong>PATCH: </strong>El método PATCH  es utilizado para aplicar modificaciones parciales a un recurso.</li>
+              <li><strong>DELETE: </strong>El método DELETE borra un recurso en específico.</li>
+            </ul> 
+            [8]
+
+      </div> 
+
+      <div style="background-color:rgb(213, 120, 221)" >
+          <h3>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h3>
+          Ya que al enviar un formulario proporcionamos un bloque de datos que se deben procesar utilizamos el
+          método POST ya qye solicita que el recurso de destino procese la representación incluida en la solicitud 
+          de acuerdo con el recurso en una semántica propia y específica.[8]
+      </div>
+
+      <div style="background-color:rgb(213, 120, 221)" >
+         <h3>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL? </h3>
+         El método GET solicita la transferencia de la actual representación seleccionada del recurso de destino. 
+         GET es el mecanismo principal de recuperación de información y el foco de casi todas las optimizaciones de rendimiento. 
+         Por lo tanto, cuando las personas hablan de recuperar información identificable a través de HTTP, generalmente se refieren a hacer una solicitud GET.[10]
+      </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+         <h3>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error? </h3>
+         El código de estado 200 (OK) indica que la solicitud ha tenido éxito.[8]
+     </div>
+
+     <div style="background-color:rgb(213, 120, 221)" >
+        <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué? </h3>
+        Si, debido a que el codigo de estado 404 (Not Found) indica que el servidor de origen no encontró una representación actual para el recurso de destino 
+        al que e quiere acceder o no está dispuesto a revelar que existe.[8]
+    </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+        <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué? </h3>
+        No necesariamente, ya que el código de estado 500 (Error interno del servidor) indica que el servidor encontró una condición inesperada que le impidió cumplir la solicitud. [8]
+    </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+        <h3>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados?</h3>
+        Con la llegada de HTML5, se han desaprobado muchos elementos, debido a que estos han sido remplazados por nuevas etiquetas, funciones de CSS, o simplemente ya no se utilizan.
+        <ul>
+            <li><strong>Appet: </strong> Que en su lugar se utiliza "embed" u "object"</li>
+            <li><strong>Acronym: </strong> Que en su lugar se utiliza "abbr"</li>
+            <li><strong>Frame: </strong> Estos han sido completamente desaprobados en HTML5</li>
+          </ul>
+        [9]
+    </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+        <h3>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h3>
+        <ul>
+            <li>HTML5 define una sintaxis compatible con HTML4 y XHTML 1.0.</li>
+            <li>Para definir el juego de caracteres se introduce un nuevo atributo para la etiqueta "meta": "meta charset=”UTF-8″"</li>
+            <li> Simplificacion del DOCTYPE: "!DOCTYPE html"</li>
+            <li> HTML5 permite incluir elementos de SVG y MathML.</li>
+            <li>Se introducen nuevos elementos, como: section, article, aside, header, footer, etc.</li>
+          </ul> 
+          [10]
+    </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+        <h3>¿Qué componentes de estructura y estilo tiene una tabla? </h3>
+        Una tabla en HTML se define con la etiqueta "table".<br>
+        El encabezado de tabla se define con la etiqueta "th".
+        Por defecto, los encabezados de las tablas están en negrita y centrados.<br>
+        Cada fila de la tabla se define con la etiqueta "tr".<br>
+        Las celdas de la tabla se definen con la etiqueta "td".
+    </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+        <h3>¿Cuáles son los principales controles de una forma HTML5?</h3>
+        <ul>
+            <li>"!DOCTYPE HTML": Ya qye define que el documento esta bajo el estandar de HTML 5</li>
+            <li>"HTML" Represneta la raiz del documento.</li>
+            <li> head" 	Representa una colección de metadatos acerca del documento, scripts y hojas de estilo.</li>
+            <li>"title" Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página.</li>
+            <li>"link" 	Usada para enlazar JavaScript y CSS externos con el documento HTML actual.</li>
+            <li>"body"	Representa el contenido principal de un documento HTML.</li>
+            <li>"header" Define la cabecera de una página o sección</li>
+            <li>"footer" Define el pie de una página o sección.</li>
+            <li>"main" 	Define el contenido principal o importante en el documento.</li>          
+          </ul> 
+          [11]
+    </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+        <h3>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</h3>
+        Actualemente estoy utilizando Firefox 68.0 en Windows 10, y mi navegador soporta <strong>491 elementos de 555 </strong>
+    </div>
+
+    <div style="background-color:rgb(213, 120, 221)" >
+        <h3>Sobre el ciclo de vida y desarrollo de los sistemas de información:</h3>
+        <h4>¿Cuál es el ciclo de vida de los sistemas de información? </h4>
+        El ciclo de vida de un sistema de información es un enfoque por fases del análisis y diseño que son:
+        <ul>
+            <li>"Fase I - Requerimientos</li>
+            <li>Fase II - Análisis / Diseño.</li>
+            <li>Fase III - Construcción.</li>
+            <li>Fase V - Producción / Mantenimiento </li>
+            <li>Fase IV - Pruebas</li>          
+          </ul> 
+
+        <h4>¿Cuál es el ciclo de desarrollo de sistemas de información?</h4> 
+        <table class="tabla">
+              <thead>
+                <tr>
+                  <th><strong>Ciclo de desarrolo de Sistemas (Senn, 1992)</strong>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> <p><strong>Investigacion Preliminar</strong>  </td>
+                </tr>
+                <tr>
+                  <td> <p><strong>Determinacion de los Requerimientos del Sistema</strong>  </td>
+                </tr>
+                <tr>
+                  <td> <p><strong>Diseño del Sistema</strong>  </td>
+                </tr>
+                <tr>  
+                <td> <p><strong>Desarrollo de software</strong>  </td>    
+                </tr>
+                <tr>
+                <td> <p><strong>Prueba de los Sistemas</strong>  </td>
+                </tr>
+                <tr>
+                  <td> <p><strong>Implantacion y desarrollo</strong>  </td>
+                </tr>
+              </tbody>
+            </table>  
+            [12]
+            <br>
+
+    </div>
+    
+    
+
+
+  </div>
+
+
+
+ 
+  <div id="citas" style="background-color:rgb(223, 202, 145)">
+        <h3>Citas</h3> 
+        <p>[1]: Berners-Lee, T., Masinter, L., & McCahill, M. (1994). Uniform resource locators (URL).</p>
+        <p>[2]: Freed, N., & Borenstein, N. (1996). Multipurpose internet mail extensions (MIME) part one: Format of internet message bodies.</p>
+        <p>[3]: Fielding, R., Frystyk, H., Berners-Lee, T., Gettys, J., & Mogul, J. C. (1996). Hypertext transfer protocol-HTTP/1.1.</p>
+        <p>[4]: Gauchat, J. D. (2012). El gran libro de HTML5, CSS3 y Javascript. Marcombo.</p>
+        <p>[5]: Cobo, Á. (2005). PHP y MySQL: Tecnología para el desarrollo de aplicaciones web. Ediciones Díaz de Santos.</p>
+        <p>[6]: Falkner, J., Timney, J., & Galbraith, B. (2001). Beginning JSP web development. Wrox Press Ltd.</p>
+        <p>[7]: Garrett, J. J. (2005). Ajax: A new approach to web application.</p>
+        <p>[8]: Fielding, R., & Reschke, J. (2014). Hypertext transfer protocol (HTTP/1.1): Semantics and content.</p>
+        <p>[9]: Reid, J. (2015). HTML5 Programmer's Reference. Apress.</p>
+        <p>[10]: van Kesteren, A., & Pieters, S. (2008). HTML5 differences from HTML4. Working Draft, W3C.</p>
+        <p>[11]: https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos</p>
+        <p>[12]: Alarcón, V. F. (2006). Desarrollo de sistemas de información: una metodología basada en el modelado (Vol. 120). Univ. Politèc. de Catalunya.</p>
+        
+
+    </div>
+
+    <footer>
+        <div id="descarga" style="background-color:rgb(255, 185, 104)">
+        <p>Codificado en Visual Studio Code</p>
+        <p>Descarga VS Code <a href="https://code.visualstudio.com/download">AQUI</a>.</p>
+        </div>
+      </footer>
+
+
+</body>
+</html>

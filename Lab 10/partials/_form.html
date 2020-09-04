@@ -1,0 +1,50 @@
+<form class="col s10 l10" method="POST" action="formres.php">
+  <br>
+  <div class="row">
+      <div class="input-field col s8 l8">
+          <input placeholder="Email" id="user" name="email" type="email" class="validate">
+          <label for="email">Email</label>
+          <span class="helper-text" data-error="Debes ingresar un correo valido" data-success="Correcto"></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s8 l8">
+          <input placeholder="Contraseña" id="con1" name="pwd" type="password" class="validate">
+          <label for="password">Contraseña</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s8 l8">
+          <input placeholder="Sitio Web" id="website" name="web" type="text" class="validate">
+          <label for="website">Introduce una pagina Web que te guste</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <h6>¿Te gusta la pizza 🍕?</h6>
+      <p>
+        <label class="input-field col s6 l2">
+          <input class="with-gap" name="pizza" type="radio" value="Si">
+          <span>Si</span>
+        </label>
+      </p>
+      <p>
+        <label class="input-field col s6 l2">
+          <input class="with-gap" name="pizza" type="radio" value="No">
+          <span>No</span>
+        </label>
+      </p>
+    </div>
+
+      <div class="row">
+      <div class="input-field col s8 l8">
+          <button class="btn waves-effect purple" type="submit" name="action">Enviar
+            <i class="material-icons right">send</i>
+          </button>
+      </div>        
+    </div>
+            
+                
+  </form>

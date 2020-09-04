@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="styles.css" type="text/css" media=screen>
+     <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet"> 
+    <title>Laboratorio 5. DAW-DB</title>
+</head>
+<body>
+<header>
+    <h1>Laboratorio 5. Programación orientada a eventos</h1>
+</header>
+
+<br>
+
+<h2>
+    A continuacion se mostrara un formulario que valida si la contraseña que utilizas es segura.
+</h2>
+<div id="validaContrasena">
+    <form onsubmit="validaPass(this)">
+    <p>Nombre: <input type="text" name="usuario"></p>
+    <p>Contraseña: <input type="password" name="con1"></p>
+    <p>Vuelve a escribir tu contraseña: <input type="password" name="con2"></p>
+    <p><input id="submit" type="submit" value="Enviar"></p>
+</form>
+</div>
+<br>
+<p>
+    <h2>Compra estos articulos</h2>
+    <h5>Si no quieres alguno, ponlo en 0</h5>
+</p>
+<div>
+<nav>
+    <div id="e1">
+        <h3>Taza</h3>
+        <img src='images/taza.jpg' alt="Taza"/>
+        <h4>Costo: $10</h4>
+        <input type="range" min="0" max="10" value="0" id="canTaza">
+        <p>Cantidad: <span id="vTaza"></span></p>
+    </div> 
+    <div id="e2">
+        <h3>Lapiz</h3>
+        <img src='images/lapiz.jpg' alt="Lapiz"/>
+        <h4>Costo: $15  </h4>
+        <input type="range" min="0" max="10" value="0" id="canLapiz">
+        <p>Cantidad: <span id="vLapiz"></span></p>
+    </div>
+    <div id="e3">
+        <h3>Lapicero</h3>
+        <img src='images/lapicero.jpg' alt="Lapicero"/>
+        <h4>Costo: $18</h4>
+        <input type="range" min="0" max="10" value="0" id="canLapicero">
+        <p>Cantidad: <span id="vLapicero"></span></p>
+    </div>
+</nav>
+<h3>Haz click para comprar</h3>
+<button onclick="Total()">Total</button>
+</div>
+<br>
+<div id="operaNums">
+        <form onsubmit="operaNumes(this)">
+        <p>Numero 1: <input type="number" name="n1"></p>
+        <p>Numero 2: <input type="number" name="n2"></p>
+        <nav>
+        <p><input id="sum" type="submit" value="Suma">
+        <input id="res" type="submit" value="Resta">
+        <input id="div" type="submit" value="Division">
+        <input id="mult" type="submit" value="Multiplicacion"></p>
+        </nav>
+    </form>
+</div>
+<br>>
+<div class="Preguntas">
+    <h3>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h3>
+    <p>La ventaja de validar los inputs con JS antes de enviar los datos es que nos permite evitar que el usuario envie datos
+        que pueden romper el la funcionalidad del servidor, ademas que nos permite tomar el control de la apariencia de los mensajes de error
+        y tambien nos permite lidiar con los navegadores no compatibles con la validación de formularios de HTML5.</p>
+</div>
+
+<div class="Preguntas">
+        <h3>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h3>
+        <p>Existen dos formas eficazes de saltarse la validacion de un formulario de JS:</p>
+        <ul>
+            <li><strong><em>nonvalidate</em></strong>: Se agrega esta condicion al formulario.</li>
+            <li><strong><em>formnovalidate</em></strong>: Se agrega esta condicion al input <strong>submit</strong> del formulario.</li>
+        </ul>
+</div>
+<div class="Preguntas">
+    <h3>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h3>
+    <p>Ya que nos permite ser mas responsivos con el usuario indicandole con mucha mas facilidad y claridad el error que cometio, ademas
+        de poder darle soporte a navegadores antiguos que no puedan ejecutar <strong>HTML5</strong> </p>
+</div>
+
+
+</body>
+
+
+<script type="text/javascript" src="Funcion.js"></script>
+</html>

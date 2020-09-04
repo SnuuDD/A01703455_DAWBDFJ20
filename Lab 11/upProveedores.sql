@@ -1,0 +1,5 @@
+LOAD DATA INFILE 'proveedores.csv' 
+INTO TABLE lab11.provedores
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'

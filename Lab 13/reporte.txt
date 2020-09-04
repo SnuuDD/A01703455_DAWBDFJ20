@@ -1,0 +1,62 @@
+######################################## E J E R C I C I O  2 ########################################
+
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+
+Sí, las claves se estan duplicando, esto probablemente ocurre por que ni hay nada que garantice una identidad referencial 
+
+¿Qué ocurrió?
+No se agrega, ya existe un dato con ese valor
+
+¿Qué información muestra esta consulta?
+Constraints de las tablas
+
+¿Qué sentencias utilizaste para definir las llaves primarias?
+ALTER TABLE Table ADD CONSTRAINT xxxx PRIMARY KEY (yyyyy)
+
+¿Qué sentencias utilizaste para definir este constrait?
+ALTER TABLE Entregan ADD CONSTRAINT llave PRIMARY KEY (fecha)
+ALTER TABLE Entregan ADD CONSTRAINT llave FOREIGN KEY (numero);
+ALTER TABLE Entregan ADD CONSTRAINT llave FOREIGN KEY (RFC);
+ALTER TABLE Entregan ADD CONSTRAINT llave FOREIGN KEY (Clave);
+
+######################################## E J E R C I C I O  3 ########################################
+
+
+¿Qué particularidad observas en los valores para clave, rfc y numero? 
+No existen dichos valores
+
+¿Cómo responde el sistema a la inserción de este registro?
+No permite la ejecucion de la consulta
+
+¿Qué significa el mensaje que emite el sistema?
+Un hijo de la llave foranea no puede alterar el valor de la misma
+
+¿Qué significado tiene la sentencia anterior?
+Obliga que Clave.Entregan sean referencias obligatorias de Clave.Materiales
+
+ ALTER TABLE Entregan ADD CONSTRAINT enNum  FOREIGN KEY (Numero) REFERENCES Proyectos(Numero);
+ ALTER TABLE Entregan ADD CONSTRAINT enCla FOREIGN KEY (Clave) REFERENCES Materiales(Clave);
+ ALTER TABLE Entregan ADD CONSTRAINT enNum FOREIGN KEY (RFC) REFERENCES Proveedores(RFC);
+
+
+######################################## E J E R C I C I O  4 ########################################
+
+¿Qué uso se le está dando a GETDATE()? 
+Asigna a un registro la fecha del servidor
+
+¿Tiene sentido el valor del campo de cantidad?
+No, significaria registrar una entrega vacia
+
+¿Cómo responde el sistema? 
+No permite la ejecucion
+
+¿Qué significa el mensaje?
+El valor debe ser mayor a 0 obligatoriamente
+
+Integridad referencial:
+Es una llave externa que referencia a un valor de una tabla de origen.
+
+
+
+
+

@@ -1,0 +1,92 @@
+@import 'https://fonts.googleapis.com/css?family=Mina';
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
+
+
+body {
+	margin: 0 auto;
+	max-width: 50em;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	color: #555;
+  padding: 4em 1em;
+  background-image:url('images/background.jpg');
+  background-size: cover;
+  }
+  
+  a {
+	color: #e81c4f;
+  }
+
+  
+h2 {
+	margin-top: 1em;
+	padding-top: 1em;
+}
+
+h3#convid{
+  text-align: center;
+}
+
+  h1,h2,strong {
+  color: #333;
+}
+
+div#watermark {
+    font-family: 'Mina', sans-serif;
+    font-size: 2em;
+    position: fixed;
+    bottom:5px;
+    right:5px;
+    opacity: 0.2;
+    z-index: 99;
+    color: black;
+    cursor: move;
+}
+
+div#contenedor{
+  width: 25em;
+  height: 5.5em;
+  margin: 0 auto;
+  position: fixed;
+  top:5px;
+  left:5px;
+  z-index: 98;
+  border-color: transparent;
+  text-align: center;
+  /*opacity: 0.5;*/
+}
+
+div#dinamiConvid{
+  visibility: collapse;
+}
+
+h3#desplegable{
+  color: #540932;
+  opacity: 1;
+}
+
+div#ono{
+  font-family: 'Mina', sans-serif;
+  /*font-size: 2em;*/
+  color:black;
+  width: 25em;
+  height: 5.5em;
+  margin: 0 auto;
+  position: fixed;
+  top:5px;
+  left:5px;
+  z-index: 98;
+  border-color: transparent;
+  text-align: center;
+  opacity: 1;
+}
+
+code{
+  color: blueviolet;
+  background-color: #f1f1f1;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
+  font-family: Consolas,"courier new";
+  font-size: 16px;
+}

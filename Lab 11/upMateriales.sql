@@ -1,0 +1,5 @@
+LOAD DATA INFILE 'materiales.csv' 
+INTO TABLE lab11.materiales
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <link rel="stylesheet"  href="styles.css" type="text/css" media=screen>
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet"> 
+  
+  <title>Laboratorio 4. DAW-DB</title>
+  
+</head>
+
+<body>
+
+<header>
+    <h1>Laboratorio 4: Fundamentos de JavaScript</h1>
+</header>
+<br>
+<script src="Funcion.js"></script> 
+<br>
+
+<button onclick="Suma()">Calcula el tiempo<br> de una suma aqui</button>
+<br>
+<button onclick="CuentArreglo()">Cuenta los numeros<br> arreglo aleatorio de 20 num.</button>
+<br>
+<button onclick="semiMatrix()">Promedio de las columnas<br> de matriz 5*5.</button>
+<br>
+<button onclick="INVerT()">Invierte un numero aqui</button>
+<br>
+<div class="JAJAJ">
+  <p><strong>
+      Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.
+
+      What is the least number of flagstones needed to pave the Square? It's allowed to cover the surface larger than the Theatre Square, but the Square has to be covered. It's not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.
+      <br>
+      Input
+      <br>
+      The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 109).
+      <br>
+      Output
+      <br>
+      Write the needed number of flagstones.</strong>
+  </p>
+  <button onclick="TSquare()">Resuelve aqui</button>
+</div>
+
+<div class="Preguntas">
+  <h3>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h3>
+  <p>Java es un lenguaje creado por Sun Microsystems, JavaScript es un lenguaje creado por Netscape
+  <br>
+  Java un lenguaje basado en clases y estrictamente tipado, se diferencia de JS ya que este es un lenguaje basado en prototipos y es dinamicoen el manejo de variables
+  <br>
+  Java es un lenguaje multiprocesos a diferencia de JS que es un lenguaje de solo un hilo.
+  </p>
+</div>
+
+<div class="Preguntas">
+    <h3>¿Qué métodos tiene el objeto Date? </h3>
+    <p><strong>Date.UTC()</strong> toma los parámetros de la fecha delimitados coma y devuelve el número de milisegundos entre las 00:00:00 del 1 de enero de 1970 (hora universal) y la hora que especifique.
+    <br>
+    <strong>Date.parse()</strong> Transforma una cadena con la representación de una fecha y hora, y devuelve el número de milisegundos desde las 00:00:00 del 1 de enero de 1970, hora local.
+    <br>
+    <strong>Date.prototype.getDate()</strong> El valor devuelto por getDate() es un número entero, entre 1 y 31, que representa el día del mes para la fecha dada según la hora local.
+    <br>
+    <strong>Date.prototype.getTime()</strong> El método getTime() devuelve el valor numérico correspondiente a la hora para la fecha especificada según la hora universal
+    <br>
+    <strong>Date.prototype.getTime()</strong> El método getTime() devuelve el valor numérico correspondiente a la hora para la fecha especificada según la hora universal
+    <br>
+    <strong>Date.prototype.toISOString()</strong> El método toISOString() devuelve una cadena en el formato simplificado extendido ISO (ISO 8601), que siempre mide 24 caracteres de largo: YYYY-MM-DDTHH:mm:ss.sssZ. El uso horario no tiene retraso respecto a UTC, como lo denota el sufijo "Z".
+    </p>
+  </div>
+
+  <div class="Preguntas">
+    <h3>¿Qué métodos tienen los arreglos? </h3>
+    <p><strong>Array.isArray()</strong> determina si el valor pasado es un Array.
+    <br>
+    <strong>Array.of()</strong> crea una nueva instancia Array con un número variable de elementos pasados como argumento, independientemente del número o del tipo.
+    <br>
+    <strong>Array.push()</strong> El método push() añade uno o más elementos al final de un array y devuelve la nueva longitud del array.
+    <br>
+    <strong>Array.prototype.shift()</strong> El método shift() elimina el primer elemento del array y lo retorna. Este método modifica la longitud del array.
+    <br>
+    <strong>Array.prototype.lastIndexOf()</strong> El método lastIndexOf() devuelve el último índice en el que un cierto elemento puede encontrarse en el arreglo, ó -1 si el elemento no se encontrara. El arreglo es recorrido en sentido contrario, empezando por el índice fromIndex.
+    </p>
+  </div>
+  
+  <div class="Preguntas">
+      <h3>¿Cómo se declara una variable con alcance local dentro de una función?</h3>
+      <p>JUna variable local se declara desde dentro de alguna funciom, lo que delimita su alcance a la misma funcion.
+        <br>
+        "myfunc(){<br>
+          let num = 1 ---- Num solo tiene alcance dentro de la funcion 'myfunc()'<br>
+        }"
+      </p>
+    </div>
+
+    <div class="Preguntas">
+        <h3>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
+        <p>El problema de usar variables globales dentro de funciones, implica el problema de tomar y/o sobrescribir valores de otras variables que pueden afectar el funcionamiento del programa.
+        </p>
+      </div>
+
+ <div class="Preguntas">
+        <h3>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</h3>
+        <p>El método String.match() se usa para obtener todas las ocurrencias de una expresión regular dentro de una cadena. Esto se puede utilizar para poder identificar contraseñas inseguras
+          cuando alguien se registra en un formulario.
+        </p>
+      </div>
+<footer></footer>
+
+      
+</body>
+</html>
